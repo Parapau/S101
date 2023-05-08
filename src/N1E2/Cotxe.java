@@ -2,7 +2,7 @@ package N1E2;
 
 public class Cotxe {
 	private static final String marca = "Seat";
-	private static String model = "Panda";
+	private static String model;
 	private final int potencia;
 	
 	public Cotxe(int potencia) {
