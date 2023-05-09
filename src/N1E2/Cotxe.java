@@ -2,10 +2,11 @@ package N1E2;
 
 public class Cotxe {
 	private static final String marca = "Seat";
-	private static String model;
+	private static String model = "Panda";
 	private final int potencia;
 	
-	public Cotxe(int potencia) {
+	public Cotxe(int potencia, String model) {
+		Cotxe.model = model; 
 		this.potencia = potencia;
 	}
 

@@ -16,19 +16,19 @@ public class NoticiaF1 extends Noticia{
 		this.escuderia = escuderia;
 	}
 	
-	public int calcularPreuNoticia() {
+	public void calcularPreuNoticia() {
 		int preu = 100;
 		preu += (this.escuderia.equalsIgnoreCase("Ferrari"))? 50:0;
 		preu += (this.escuderia.equalsIgnoreCase("Mercedes"))? 50:0;
 		
-		return preu;
+		setPreu(preu);;
 	}
 	
-	public int calcularPuntuacioNoticia(){
+	public void calcularPuntuacioNoticia(){
 		int punts = 4;
 		punts += (this.escuderia.equalsIgnoreCase("Ferrari"))? 2:0;
 		punts += (this.escuderia.equalsIgnoreCase("Mercedes"))? 2:0;
 		
-		return punts;
+		setPuntuacio(punts);
 	}
 }

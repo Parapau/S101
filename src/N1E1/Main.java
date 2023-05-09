@@ -4,9 +4,14 @@ public class Main {
 	public static void main (String args[]) {
 		Vent instrument = new Vent ("Pere", 68);
 		
-		Percussio.metodeStatic();
+		System.out.println("patata");
 		
 		Vent.metodeStatic();
+		
+		
+		Percussio.metodeStatic();
+		
+		//Vent.metodeStatic();
 		
 		Percussio tambor = new Percussio ("Josep", 6);
 		Percussio tamboor = new Percussio ("Joseawdawp", 6);

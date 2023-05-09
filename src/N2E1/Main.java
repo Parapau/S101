@@ -5,6 +5,6 @@ public class Main {
 		Smartphone movil = new Smartphone ("Nokia", "Bloc de pedra");
 		movil.alarma();
 		movil.fotografiar();
-		movil.trucar("6256457654657465454674654");
+		movil.trucar("654642158");
 	}
 }

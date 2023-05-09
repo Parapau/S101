@@ -34,7 +34,7 @@ public class NoticiaFurbo extends Noticia{
 		this.jugador = jugador;
 	}
 	
-	public int calcularPreuNoticia() {
+	public void calcularPreuNoticia() {
 		int preu = 300;
 		preu += (this.competicio.equalsIgnoreCase("Lliga de campions"))? 100:0;
 		preu += (this.equip.equalsIgnoreCase("Barça"))? 100:0;
@@ -42,10 +42,10 @@ public class NoticiaFurbo extends Noticia{
 		preu += (this.jugador.equalsIgnoreCase("Ferran Torres"))? 50:0;
 		preu += (this.jugador.equalsIgnoreCase("Benzema"))? 50:0;
 		
-		return preu;
+		setPreu(preu);
 	}
 	
-	public int calcularPuntuacioNoticia(){
+	public void calcularPuntuacioNoticia(){
 		int punts = 5;
 		punts += (this.competicio.equalsIgnoreCase("Lliga de campions"))? 3:0;
 		punts += (this.competicio.equalsIgnoreCase("Lliga"))? 3:0;
@@ -54,6 +54,6 @@ public class NoticiaFurbo extends Noticia{
 		punts += (this.jugador.equalsIgnoreCase("Ferran Torres"))? 1:0;
 		punts+= (this.jugador.equalsIgnoreCase("Benzema"))? 1:0;
 		
-		return punts;
+		setPuntuacio(punts);
 	}
 }

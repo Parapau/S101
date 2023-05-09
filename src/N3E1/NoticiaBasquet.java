@@ -26,23 +26,23 @@ public class NoticiaBasquet extends Noticia{
 	}	
 	
 	
-	public int calcularPreuNoticia() {
+	public void calcularPreuNoticia() {
 		int preu = 250;
 		preu += (this.competicio.equalsIgnoreCase("Eurolliga"))? 75:0;
 		preu += (this.club.equalsIgnoreCase("Barça"))? 75:0;
 		preu += (this.club.equalsIgnoreCase("Madrid"))? 75:0;
 		
-		return preu;
+		setPreu(preu);
 	}
 	
-	public int calcularPuntuacioNoticia(){
+	public void calcularPuntuacioNoticia(){
 		int punts = 4;
 		punts += (this.competicio.equalsIgnoreCase("Eurolliga"))? 3:0;
 		punts += (this.competicio.equalsIgnoreCase("ACB"))? 2:0;
 		punts += (this.club.equalsIgnoreCase("Barça"))? 1:0;
 		punts += (this.club.equalsIgnoreCase("Madrid"))? 1:0;
 		
-		return punts;
+		setPuntuacio(punts);
 	}
 }
 	

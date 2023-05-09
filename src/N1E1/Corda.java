@@ -6,7 +6,7 @@ public class Corda extends Instrument{
 	}
 	
 	static {
-		System.out.println("INICIALITZAT JODER liro liro");
+		System.out.println("easrwe");
 	}
 	
 	public String tocar() {

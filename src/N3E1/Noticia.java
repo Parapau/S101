@@ -10,9 +10,49 @@ public abstract class Noticia {
 		this.puntuacio = 0;
 	}
 	
-	public abstract int calcularPreuNoticia();
+	
+	
+	
+	public String getTitular() {
+		return titular;
+	}
+
+	public String getText() {
+		return text;
+	}
+
+	public int getPreu() {
+		return preu;
+	}
+
+	public int getPuntuacio() {
+		return puntuacio;
+	}
 
 	
-	public abstract int calcularPuntuacioNoticia();
+	
+	public void setTitular(String titular) {
+		this.titular = titular;
+	}
+
+	public void setText(String text) {
+		this.text = text;
+	}
+
+	public void setPreu(int preu) {
+		this.preu = preu;
+	}
+
+	public void setPuntuacio(int puntuacio) {
+		this.puntuacio = puntuacio;
+	}
+
+
+
+
+	public abstract void calcularPreuNoticia();
+
+	
+	public abstract void calcularPuntuacioNoticia();
 	
 }

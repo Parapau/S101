@@ -25,22 +25,22 @@ public class NoticiaTenis extends Noticia {
 		this.tenistes = tenistes;
 	}
 	
-	public int calcularPreuNoticia() {
+	public void calcularPreuNoticia() {
 		//si cal posar mes d'un tenista es pot fer un split
 		int preu = 150;
 		preu += (this.tenistes.equalsIgnoreCase("Nadal"))? 100:0;
 		preu += (this.tenistes.equalsIgnoreCase("Federer"))? 100:0;
 		preu += (this.tenistes.equalsIgnoreCase("Federer"))? 100:0;
 		
-		return preu;
+		setPreu(preu);
 	}
 	
-	public int calcularPuntuacioNoticia(){
+	public void calcularPuntuacioNoticia(){
 		int punts = 4;
 		punts += (this.tenistes.equalsIgnoreCase("Nadal"))? 3:0;
 		punts += (this.tenistes.equalsIgnoreCase("Federer"))? 3:0;
 		punts += (this.tenistes.equalsIgnoreCase("Federer"))? 3:0;
 		
-		return punts;
+		setPuntuacio(punts);
 	}
 }

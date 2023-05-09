@@ -16,20 +16,20 @@ public class NoticiaMotos extends Noticia{
 		this.equip = equip;
 	}
 	
-	public int calcularPreuNoticia() {
+	public void calcularPreuNoticia() {
 		int preu = 100;
 		preu += (this.equip.equalsIgnoreCase("Honda"))? 50:0;
 		preu += (this.equip.equalsIgnoreCase("Yamaha"))? 50:0;
 		
-		return preu;
+		setPreu(preu);;
 	}
 	
-	public int calcularPuntuacioNoticia(){
+	public void calcularPuntuacioNoticia(){
 		int punts = 3;
 		punts += (this.equip.equalsIgnoreCase("Hona"))? 3:0;
 		punts += (this.equip.equalsIgnoreCase("Yamaha"))? 3:0;
 		
-		return punts;
+		setPuntuacio(punts);
 	}
 	
 }
